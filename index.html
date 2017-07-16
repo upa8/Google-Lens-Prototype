@@ -2,7 +2,7 @@
 <html lang="en" ng-app="app">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>Google Lense Prototype</title>
+	<title>Google Lens Prototype</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script type="text/javascript" src="js/libs/webcam.min.js"></script>
@@ -14,11 +14,10 @@
 	<div class="row">
 		<div class="col-sm-3"> </div>
 		<div class="col-sm-6">
-			<h1>Google Lens Prototype</h1>
-			<div id="my_camera"></div>
-			<!-- A button for taking snaps -->
-			<!--onClick="take_snapshot()"-->
-			<button class="btn" ng-click="take_snapshot()" >  Find </button>
+			<h1>Who am I?</h1>
+			<div id="my_camera" class="myCamera"></div>
+			<button type="button" class="btn btn-primary" ng-click="takeSnapshot()" >  WhoAmI? </button>
+			<div ng-if="loading"> Loading ...  </div>
 			<div id="results"></div>
 		</div>
 		<div class="col-sm-3"> </div>
